@@ -83,7 +83,7 @@ module.exports = {
               { text: 'BlackMarket', link: '/zh/interface/BlackMarket.md'},
               { text: 'TouTiao', link: '/zh/interface/TouTiao.md'}
             ]
-          },
+          }
           // {
           //   text: '语言',
           //   items: [
