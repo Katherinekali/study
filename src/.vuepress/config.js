@@ -7,8 +7,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '前端知识点总结',
-      description: '任何不能够给你快乐的编程都是耍流氓'
+      title: '前端项目知识总结',
+      description: '生命太短暂,不要去做一些根本没有人想要的东西'
     }
   },
   head: [
@@ -25,16 +25,13 @@ module.exports = {
   serviceWorker: true,
   theme: 'vue',
   themeConfig: {
-    repo: 'jasonandjay/study',
-
+    repo: 'Katherinekali/study',
     docsDir: 'src',
     editLinks: true,
-   
     locales: {
       '/': {
         label: '简体中文',
-        repo: 'jasonandjay/study',
-      
+        repo: 'Katherinekali/study',
         selectText: '选择语言',
         editLinkText: '帮助我们改进内容',
         lastUpdated: '上次更新',
@@ -79,26 +76,27 @@ module.exports = {
               { text: 'React', link: '/zh/react/'},
               { text: '小程序', link: '/zh/miniapp/' },
               { text: 'Webpack', link: '/zh/webpack/'},
-              { text: '悦读管理后台', link: '/zh/interface/Yuedu.md'},
-              { text: 'BlackMarket', link: '/zh/interface/BlackMarket.md'},
-              { text: 'TouTiao', link: '/zh/interface/TouTiao.md'}
+              { text: 'html5', link: '/zh/html5'}
+              // { text: '悦读管理后台', link: '/zh/interface/Yuedu.md'},
+              // { text: 'BlackMarket', link: '/zh/interface/BlackMarket.md'},
+              // { text: 'TouTiao', link: '/zh/interface/TouTiao.md'}
             ]
+          },
+          {
+            text: '语言',
+            items: [
+              { text: 'Chinese', link: '/language/chinese' },
+              { text: 'Japanese', link: '/language/japanese' }
+            ]
+          },
+          {
+            text: '配置参考',
+            link: '/config/'
+          },
+          {
+            text: '默认主题配置',
+            link: '/default-theme-config/'
           }
-          // {
-          //   text: '语言',
-          //   items: [
-          //     { text: 'Chinese', link: '/language/chinese' },
-          //     { text: 'Japanese', link: '/language/japanese' }
-          //   ]
-          // },
-          // {
-          //   text: '配置参考',
-          //   link: '/config/'
-          // },
-          // {
-          //   text: '默认主题配置',
-          //   link: '/default-theme-config/'
-          // }
         ],
         sidebar: {
           '/guide/': genSidebarConfig('指南'),
